@@ -1,0 +1,80 @@
+
+/* responsywność do 786 px */
+
+@media (max-width: 768px) {
+    #main-nav label {
+        display: block;
+        color: #1ac056;
+        text-align: right;
+        padding: 15px;
+    }
+    #main-nav ul {
+        margin: 0;
+        display: none;
+    }
+    #main-nav ul .menu-item {
+        display: block;
+        padding: 15px;
+    }
+    #main-nav #drop:checked + ul {
+        display: block;
+    }
+    .col-1-2 {
+        width: 100%;
+    }
+    #about figure .about-img {
+        width: 100%;
+        max-height: none;
+    }
+    #portfolio .portfolio-item {
+        max-height: none;
+        width: 100%;
+    }
+}
+
+/*----- responsywność do 480 px ----*/
+
+@media (max-width: 480px) {
+    #main-header .header-caption {
+        font-size: 60%;
+    }
+    #contact .col-1-2 {
+        text-align: center;
+    }
+    #contact .col-1-2 h2 {
+        text-align: center;
+    }
+    .social-icons {
+        margin: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+/*----- responsywność dla przedziału 768 - 1170 px ------*/
+
+@media (min-width: 768px) and (max-width: 1170px) {
+    #portfolio #portfolio-item-1 {
+        width: 50%;
+    }
+    #portfolio #portfolio-item-2 {
+        width: 50%;
+    }
+    #portfolio #portfolio-item-3 {
+        width: 100%;
+    }
+}
+
+/* ----------  KOMENTARZ  - inne rozwiązanie dla 2 obrazki + 1 pod spodem -----------
+
+
+@media (max-width: 1170) {
+#portfolio .portfolio-item {
+width: 50%;
+}
+#portfolio .portfolio-item:last-child {
+width: 100%;
+}
+portfolio .portfolio-item .portfolio-mask .portfolio-content-inner   zmienic w css width na 100%
+}
+*/
